@@ -59,11 +59,13 @@
 -- (13, 'Dharampeth', 'Nagpur', 'Maharashtra', '440010'),
 -- (14, 'Kothrud Road', 'Pune', 'Maharashtra', '411038'),
 -- (15, 'Badnera Road', 'Amravati', 'Maharashtra', '444701');
- 
- 
-
 select * from users;
-select * from addresses;
+-- select * from addresses;
+select * from user_admin;
+
+select name from users
+union
+select name from users_admin;
 
 select users.name, users.gender, addresses.city, addresses.street, addresses.state, addresses.id from users 
 inner join addresses on users.id = addresses.user_id;
