@@ -134,7 +134,11 @@ select * from accounts where customer_name like '%ar%';
 
 -- Task 39: Update Aarav Sharma's balance from 85000 to 95000.
 select account_id from accounts where  customer_name = 'Priya patil';
+
 update accounts set balance = 95000 where account_id = 1002;
+
+update accounts set balance = 95000 where customer_name = 'Priya patil';
+
 select * from accounts;
 
 -- Task 40: Update Vikram Deshmukh's status from Dormant to Active.

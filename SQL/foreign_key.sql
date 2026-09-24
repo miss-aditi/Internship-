@@ -69,3 +69,5 @@ select name from users_admin;
 
 select users.name, users.gender, addresses.city, addresses.street, addresses.state, addresses.id from users 
 inner join addresses on users.id = addresses.user_id;
+
+create view reach_users as select users where gender = 'FEMALE'; 
