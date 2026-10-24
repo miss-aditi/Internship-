@@ -1,0 +1,29 @@
+#one {
+  margin-top: 0;
+  padding-top: 30px;
+ background-color: rgb(225, 212, 237);
+ color: black;
+ text-decoration: solid;
+ font-size: 5rem;
+ text-align: center;
+ height: 150px;
+
+}
+
+p{
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+}
+
+p button{
+  margin-top: 50px;
+  color: aliceblue;
+  background-color: rgb(211, 126, 220);
+  height: 50px;
+  width: 150px;
+}
+
+p button:hover{
+  background-color: blue;
+}
